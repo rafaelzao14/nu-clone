@@ -1,4 +1,6 @@
 import styled from "styled-components/native";
+import { Animated } from "react-native";
+
 export const SafeAreaView = styled.SafeAreaView`
   flex: 1;
   background: #8b10ae;
@@ -8,16 +10,16 @@ export const Content = styled.View`
   max-height: 400px;
   z-index: 5;
 `;
-export const Card = styled.View`
+export const Card = styled(Animated.View)`
   flex: 1;
   background: #fff;
   border-radius: 4px;
   margin: 0 20px;
   height: 100%;
-  /* position: absolute;
+  position: absolute;
   left: 0;
   right: 0;
-  top: 380px; */
+  top: 0px;
 `;
 export const CardHeader = styled.View`
   flex-direction: row;
